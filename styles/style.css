@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor-primaria: #00224d;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciária: #ff204e;
+  --cor--bg-hover: #5d0e41;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundária: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  flex-direction: column;
+}
+
+.cabecalho {
+  display: flex;
+  gap: 5%;
+  padding: 3%;
+  font-family: var(--fonte-primaria);
+}
+
+.conteudo {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10%;
+  font-family: var(--fonte-secundária);
+}
+
+.conteudo__esquerda {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.conteudo__esquerda__texto {
+  text-align: justify;
+  height: 80%;
+  width: 100%;
+  background: none;
+  border: solid var(--cor--bg-hover);
+  border-radius: 3%;
+  color: var(--cor-secundaria);
+  resize: none;
+}
+
+.conteudo__esquerda__botoes {
+  display: flex;
+  justify-content: start;
+  gap: 3%;
+}
+
+.conteudo__esquerda__botoes button {
+  padding: 5%;
+  border: solid var(--cor-terciária);
+  background-color: var(--cor-terciária);
+  border-radius: 8%;
+}
+
+.conteudo__direita {
+  display: flex;
+  background-color: none;
+  border: solid var(--cor--bg-hover);
+  border-radius: 10%;
+  padding: 5% 0%;
+  color: var(--cor-secundaria);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3%;
+  align-items: center;
+}
+
+.conteudo__direita__imagem {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+#conteudo__resultado__final {
+  resize: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.conteudo__resultado__botao {
+  padding: 5%;
+  border: solid var(--cor-terciária);
+  background-color: var(--cor-terciária);
+  border-radius: 8%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.rodape {
+  background-color: var(--cor-terciária);
+  color: var(--cor-primaria);
+  font-family: var(--fonte-secundária);
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}

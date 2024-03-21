@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img
+        class="cabecalho__imagem"
+        src="./assets/LogoAlura.png"
+        alt="Logo Alura"
+      />
+      <h1 class="cabecalho__titulo">DECODIFICADOR DE TEXTO</h1>
+    </header>
+    <main class="conteudo">
+      <div id="conteudo__esquerda" class="conteudo__esquerda">
+        <textarea
+          id="conteudo__esquerda__texto"
+          class="conteudo__esquerda__texto"
+          placeholder="Digite seu texto aqui"
+        ></textarea>
+        <p class="conteudo__esquerda__aviso">
+          Apenas letras minúsculas e sem acento
+        </p>
+        <div class="conteudo__esquerda__botoes">
+          <button onclick="criptografarTexto()">Criptografar</button>
+          <button onclick="descriptografarTexto()">Descriptografar</button>
+        </div>
+      </div>
+      <div id="conteudo__direita" class="conteudo__direita">
+        <img
+          class="conteudo__direita__imagem"
+          src="./assets/MeninotxtCript.png"
+          alt="Garoto com uma lupa olhando um diamante"
+        />
+        <div class="mensagemInicial">
+          <h2>Nenhuma mensagem encontrada</h2>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <div class="conteudo__resultado hidden">
+          <textarea id="conteudo__resultado__final"></textarea>
+          <button class="conteudo__resultado__botao" onclick="copiarTexto()">
+            Copiar
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="rodape">Desenvolvido por Allyson Ostrufka.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
